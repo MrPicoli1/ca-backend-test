@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3MMPpE/VxFi5d8JgtApR2+vGRXFlgnweLe4AWdsKeKk=",
+  "Source": "BackendTest.API",
+  "BasePath": "_content/BackendTest.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

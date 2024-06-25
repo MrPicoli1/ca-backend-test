@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendTest.API</name>
+    </assembly>
+    <members>
+        <member name="M:BackendTest.API.Controllers.ProductController.GetProduct(System.Guid)">
+            <summary>
+            Get a Product
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If the product is found</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.ProductController.PostProduct(BackendTest.API.Models.ProductModel)">
+            <summary>
+            Add a Product
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If and product is added</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.ProductController.UpdateProduct(BackendTest.API.Models.ProductModel)">
+            <summary>
+            Update a Product
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="204">If and product is found</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.ProductController.DeleteProduct(System.Guid)">
+            <summary>
+            Delete a Product
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="204">If and product is deleted</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Get a User
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If the user is found</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.UserController.PostUser(BackendTest.API.Models.UserModel)">
+            <summary>
+            Add a User
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="200">If and user is added</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.UserController.UpdateUser(BackendTest.API.Models.UserModel)">
+            <summary>
+            Update a User
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="204">If and User is updated</response>
+        </member>
+        <member name="M:BackendTest.API.Controllers.UserController.DeleteProduct(System.Guid)">
+            <summary>
+            Delete a User
+            </summary>
+            <param></param>
+            <returns>IActionResult</returns>
+            <response code="204">If and user is deleted</response>
+        </member>
+    </members>
+</doc>

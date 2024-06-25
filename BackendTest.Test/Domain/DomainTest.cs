@@ -1,12 +1,25 @@
 ﻿
 namespace BackendTest.Test.Domain
 {
+
+    /*
+     
+     [DataRow("", "", "", true)]
+     [DataRow("src", "", "", true)]
+     [DataRow("src", "med", "", true)]
+     [DataRow("src", "med", "nme", false)]
+    
+     */
+
     [TestClass]
     public class DomainTest
     {
         [TestMethod]
         [TestCategory("Domain")]
-        public void ValidUser()
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        public void User_is_valid(string name, string email, string address)
         {
 
 
@@ -14,7 +27,29 @@ namespace BackendTest.Test.Domain
 
         [TestMethod]
         [TestCategory("Domain")]
-        public void InvalidUserEmail()
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        [DataRow("", "", "")]
+        public void User_is_invalid(string name, string email, string address)
+        {
+
+
+        }
+
+       
+
+        [TestMethod]
+        [TestCategory("Domain")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        public void Product_is_valid(string name)
         {
 
 
@@ -22,31 +57,16 @@ namespace BackendTest.Test.Domain
 
         [TestMethod]
         [TestCategory("Domain")]
-        public void InvalidUserName()
-        {
-
-
-        }
-
-        [TestMethod]
-        [TestCategory("Domain")]
-        public void InvalidUserArres()
-        {
-
-
-        }
-
-        [TestMethod]
-        [TestCategory("Domain")]
-        public void ValidProduct()
-        {
-
-
-        }
-
-        [TestMethod]
-        [TestCategory("Domain")]
-        public void InvalidProcuctName()
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        public void Product_is_invalid()
         {
 
 

@@ -30,7 +30,6 @@ builder.Services.AddDbContext<MySqlContext>(options =>
     options.UseMySql(connectionStringSQL, ServerVersion.AutoDetect(connectionStringSQL));
 });
 
-builder.Services.AddSingleton<MySqlContext>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(BackendTesteProfiles));

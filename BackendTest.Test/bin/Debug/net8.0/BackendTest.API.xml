@@ -96,6 +96,18 @@
             </code>
             </remarks>
         </member>
+        <member name="T:BackendTest.API.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="T:System.Text.RegularExpressions.Generated.EmailRegex_0">
             <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the EmailRegex method.</summary>
         </member>

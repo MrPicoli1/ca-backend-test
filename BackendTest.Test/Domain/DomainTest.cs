@@ -65,10 +65,8 @@ namespace BackendTest.Test.Domain
         {
             Product product = new Product(name);
 
-            var list = new List<string>();
-            list = product.IsValid();
 
-            Assert.IsNull(list);
+            Assert.IsNull(product.IsValid());
 
         }
 
@@ -82,10 +80,8 @@ namespace BackendTest.Test.Domain
         {
 
             Product product = new Product(name);
-            var list = new List<string>();
-            list = product.IsValid();
 
-            Assert.IsTrue(list.Any());
+            Assert.IsNotNull(product.IsValid());
 
         }
 

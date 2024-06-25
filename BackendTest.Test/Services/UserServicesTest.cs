@@ -1,7 +1,10 @@
 ﻿
 using BackendTest.API.Data.Repositories;
 using BackendTest.API.Models;
-using BackendTest.API.Services.User;
+using BackendTest.API.Services;
+using Microsoft.EntityFrameworkCore;
+using System.Net;
+using System.Xml.Linq;
 
 namespace BackendTest.Test.Services
 {
@@ -24,8 +27,16 @@ namespace BackendTest.Test.Services
         [DataRow("")]
         [DataRow("")]
         [DataRow("")]
-        public void Should_add_an_user(UserModel model)
+        public async Task Should_add_an_user(string name, string email, string address)
         {
+            UserModel model = new UserModel();
+            model.Name = name;
+            model.Address = address;
+            model.Email = email;
+
+            var result = await _userService.AddUser(model);
+
+            Assert.IsNotNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
 
 
         }
@@ -34,8 +45,35 @@ namespace BackendTest.Test.Services
         [DataRow("")]
         [DataRow("")]
         [DataRow("")]
-        public void Should_not_add_an_user(UserModel model)
+        public async Task Should_not_add_an_user(string name, string email, string address)
         {
+            UserModel model = new UserModel();
+            model.Name = name;
+            model.Address = address;
+            model.Email = email;
+
+            var result = await _userService.AddUser(model);
+
+            Assert.IsNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
+        }
+
+        [TestMethod]
+        [TestCategory("Services")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        public async Task Should_update_an_user(string name, string email, string address, string id)
+        {
+            var user = Guid.Parse(id);
+            UserModel model = new UserModel();
+            model.Name = name;
+            model.Address = address;
+            model.Email = email;
+            model.Id= user;
+
+            var result =await  _userService.UpdateUser(model);
+
+            Assert.IsNotNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
 
         }
 
@@ -44,9 +82,18 @@ namespace BackendTest.Test.Services
         [DataRow("")]
         [DataRow("")]
         [DataRow("")]
-        public void Should_update_an_user(UserModel model)
+        public async Task Should_not_update_an_user(string name, string email, string address, string id)
         {
+            var user = Guid.Parse(id);
+            UserModel model = new UserModel();
+            model.Name = name;
+            model.Address = address;
+            model.Email = email;
+            model.Id = user;
 
+            var result = await _userService.UpdateUser(model);
+
+            Assert.IsNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
 
         }
 
@@ -55,9 +102,42 @@ namespace BackendTest.Test.Services
         [DataRow("")]
         [DataRow("")]
         [DataRow("")]
-        public void Should_not_update_an_user(UserModel model)
+        public async Task Should_return_an_user(string id)
         {
+            var user = Guid.Parse(id);
+           
 
+            var result = await _userService.GetUser(user);
+
+            Assert.IsNotNull(result);
+
+        }
+        [TestMethod]
+        [TestCategory("Services")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        public async Task Should_not_return_an_user(string id)
+        {
+            var user = Guid.Parse(id);
+
+            var result = await _userService.GetUser(user);
+
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        [TestCategory("Services")]
+        [DataRow("")]
+        [DataRow("")]
+        [DataRow("")]
+        public async Task Should_delete_an_ser(string id)
+        {
+            var user = Guid.Parse(id);
+
+            var result = await _userService.DeleteUSer(user);
+
+            Assert.IsTrue(result);
 
         }
 
@@ -66,40 +146,13 @@ namespace BackendTest.Test.Services
         [DataRow("")]
         [DataRow("")]
         [DataRow("")]
-        public void Should_return_an_user(UserModel model)
+        public async Task Should_not_delete_an_user(string id)
         {
+            var user = Guid.Parse(id);
 
+            var result = await _userService.DeleteUSer(user);
 
-        }
-        [TestMethod]
-        [TestCategory("Services")]
-        [DataRow("")]
-        [DataRow("")]
-        [DataRow("")]
-        public void Should_not_return_an_user(UserModel model)
-        {
-
-        }
-
-        [TestMethod]
-        [TestCategory("Services")]
-        [DataRow("")]
-        [DataRow("")]
-        [DataRow("")]
-        public void Should_delete_an_ser(Guid id)
-        {
-
-
-        }
-
-        [TestMethod]
-        [TestCategory("Services")]
-        [DataRow("")]
-        [DataRow("")]
-        [DataRow("")]
-        public void Should_not_delete_an_user(Guid id)
-        {
-
+            Assert.IsFalse(result);
 
         }
 

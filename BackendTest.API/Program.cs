@@ -1,7 +1,6 @@
 using BackendTest.API.Data.Repositories;
 using BackendTest.API.Domain.Profiles;
-using BackendTest.API.Services.Product;
-using BackendTest.API.Services.User;
+using BackendTest.API.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;

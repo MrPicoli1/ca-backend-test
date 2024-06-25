@@ -16,12 +16,12 @@ namespace BackendTest.API.Domain.Entities
             Name = name;
         }
 
-        public List<string> IsValid()
+        public string IsValid()
         {
 
             if (Name.Length < 3)
             {
-                return new List<string> { "Name must be at least 2 characters" };
+                return "Name must be at least 2 characters";
             }
 
             return null;

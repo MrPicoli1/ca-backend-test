@@ -4,6 +4,7 @@ namespace BackendTest.API.Models
 {
     public class ProductModel
     {
-        public string? Name { get; private set; }
+        public Guid? Id { get; set; }
+        public string? Name { get; set; }
     }
 }

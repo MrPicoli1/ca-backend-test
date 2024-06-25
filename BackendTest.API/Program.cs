@@ -1,3 +1,8 @@
+using BackendTest.API.Data.Repositories;
+using BackendTest.API.Domain.Profiles;
+using BackendTest.API.Services.Product;
+using BackendTest.API.Services.User;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
@@ -20,6 +25,15 @@ builder.Services.AddSwaggerGen(c =>
 
 var connectionStringSQL = builder.Configuration.GetConnectionString("MySQL");
 
+builder.Services.AddDbContext<MySqlContext>(options =>
+{
+    options.UseMySql(connectionStringSQL, ServerVersion.AutoDetect(connectionStringSQL));
+});
+
+builder.Services.AddSingleton<MySqlContext>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddAutoMapper(typeof(BackendTesteProfiles));
 
 
 var app = builder.Build();

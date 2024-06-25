@@ -3,6 +3,29 @@
 namespace BackendTest.API.Domain.Entities
 {
     public class Product : Entity
-    { 
+    {
+        public Product(string name) 
+        {
+            Name = name;
+        }
+
+        public string Name { get; private set; }
+
+        public void Update(string name)
+        {
+            Name = name;
+        }
+
+        public List<string> IsValid()
+        {
+
+            if (Name.Length < 3)
+            {
+                return new List<string> { "Name must be at least 2 characters" };
+            }
+
+            return null;
+        }
+
     }
 }

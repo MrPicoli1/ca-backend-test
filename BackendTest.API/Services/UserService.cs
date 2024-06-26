@@ -19,6 +19,10 @@ namespace BackendTest.API.Services
 
         public async Task<User> AddUser(UserModel model)
         {
+
+            if(model.IsNull())
+                return null;
+
             var user = _mapper.Map<User>(model);
 
             if(user.IsValid() != null)
@@ -58,9 +62,13 @@ namespace BackendTest.API.Services
 
         }
 
-        public async Task<User> UpdateUser(UserModel model)
+        public async Task<User> UpdateUser(UserModel model, Guid? id)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == model.Id);
+
+            if (id == null || model.IsNull())
+                return null;
+
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
             if (user == null)
             {
                 return null;

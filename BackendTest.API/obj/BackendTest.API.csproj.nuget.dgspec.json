@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj": {}
+    "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj": {
+    "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj",
+        "projectUniqueName": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj",
         "projectName": "BackendTest.API",
-        "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj",
-        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\obj\\",
+        "projectPath": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\BackendTest.API.csproj",
+        "packagesPath": "C:\\Users\\guigu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guigu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

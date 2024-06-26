@@ -1,4 +1,5 @@
 ﻿using BackendTest.API.Models;
+using BackendTest.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendTest.API.Controllers
@@ -7,6 +8,16 @@ namespace BackendTest.API.Controllers
     [Route("product")]
     public class ProductController : Controller
     {
+
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
+
+
         /// <summary>
         /// Get a Product
         /// </summary>
@@ -17,8 +28,14 @@ namespace BackendTest.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetProduct(Guid id)
         {
+           var result = await _productService.GetProduct(id);
 
-            return Ok();
+            if (result == null) 
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
         }
 
 
@@ -33,7 +50,14 @@ namespace BackendTest.API.Controllers
         public async Task<IActionResult> PostProduct([FromBody] ProductModel model)
         {
 
-            return Ok();
+            var result = await _productService.AddProduct(model);
+
+            if (result.IsValid() != null)
+            {
+                return BadRequest(result.IsValid());
+            }
+
+            return Ok(result);
         }
 
         /// <summary>
@@ -42,10 +66,19 @@ namespace BackendTest.API.Controllers
         /// <param></param>
         /// <returns>IActionResult</returns>
         /// <response code="204">If and product is found</response>
-        [HttpPatch]
+        [HttpPatch("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> UpdateProduct([FromBody ]ProductModel model)
+        public async Task<IActionResult> UpdateProduct([FromBody ]ProductModel model, Guid id)
         {
+            var result = await _productService.UpdateProduct(model, id);
+
+            if(result == null)
+            {
+                return NotFound();
+            }
+
+            if(result.IsValid() != null)
+                return BadRequest(result.IsValid());
 
             return NoContent();
         }
@@ -62,6 +95,10 @@ namespace BackendTest.API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> DeleteProduct(Guid id)
         {
+            var result = await _productService.DeleteProduct(id);
+
+            if (result == false)
+                return NotFound();
 
             return NoContent();
         }

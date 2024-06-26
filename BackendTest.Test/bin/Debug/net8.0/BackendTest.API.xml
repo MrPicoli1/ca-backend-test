@@ -108,6 +108,18 @@
         <member name="M:BackendTest.API.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:BackendTest.API.Migrations.NewDatabase">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.NewDatabase.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.NewDatabase.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendTest.API.Migrations.NewDatabase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="T:System.Text.RegularExpressions.Generated.EmailRegex_0">
             <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the EmailRegex method.</summary>
         </member>

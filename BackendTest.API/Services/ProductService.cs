@@ -19,6 +19,9 @@ namespace BackendTest.API.Services
 
         public async Task<Product> AddProduct(ProductModel model)
         {
+            if(model.IsNull())
+                return null;
+
             var product = _mapper.Map<Product>(model);
 
             if (product.IsValid() != null)
@@ -54,13 +57,18 @@ namespace BackendTest.API.Services
             return product;
         }
 
-        public async Task<Product> UpdateProduct(ProductModel model)
+        public async Task<Product> UpdateProduct(ProductModel model, Guid? id)
         {
-            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == model.Id);
+            if (model.IsNull() || id == null)
+                return null;
+
+
+            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == id);
             if (product == null)
             {
                 return null;
             }
+
             product.Update(model.Name);
 
             var error = product.IsValid();

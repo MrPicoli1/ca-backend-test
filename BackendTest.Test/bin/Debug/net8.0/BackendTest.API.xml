@@ -20,7 +20,7 @@
             <returns>IActionResult</returns>
             <response code="200">If and product is added</response>
         </member>
-        <member name="M:BackendTest.API.Controllers.ProductController.UpdateProduct(BackendTest.API.Models.ProductModel)">
+        <member name="M:BackendTest.API.Controllers.ProductController.UpdateProduct(BackendTest.API.Models.ProductModel,System.Guid)">
             <summary>
             Update a Product
             </summary>
@@ -52,7 +52,7 @@
             <returns>IActionResult</returns>
             <response code="200">If and user is added</response>
         </member>
-        <member name="M:BackendTest.API.Controllers.UserController.UpdateUser(BackendTest.API.Models.UserModel)">
+        <member name="M:BackendTest.API.Controllers.UserController.UpdateUser(BackendTest.API.Models.UserModel,System.Guid)">
             <summary>
             Update a User
             </summary>

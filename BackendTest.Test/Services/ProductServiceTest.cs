@@ -94,10 +94,10 @@ namespace BackendTest.Test.Services
             var product = Guid.Parse(id);
             ProductModel model = new ProductModel();
             model.Name = name;
-            model.Id = product;
 
 
-            var result = _productService.UpdateProduct(model);
+
+            var result = _productService.UpdateProduct(model,product);
 
             Assert.IsNotNull(result);
         }
@@ -112,9 +112,9 @@ namespace BackendTest.Test.Services
             var product = Guid.Parse(id);
             ProductModel model = new ProductModel();
             model.Name = name;
-            model.Id = product;
 
-            var result = await _productService.UpdateProduct(model);
+
+            var result = await _productService.UpdateProduct(model, product);
 
             Assert.IsNull(result);
 

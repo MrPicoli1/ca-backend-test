@@ -3,8 +3,6 @@ using BackendTest.API.Data.Repositories;
 using BackendTest.API.Models;
 using BackendTest.API.Services;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
-using System.Xml.Linq;
 
 namespace BackendTest.Test.Services
 {
@@ -69,9 +67,9 @@ namespace BackendTest.Test.Services
             model.Name = name;
             model.Address = address;
             model.Email = email;
-            model.Id= user;
 
-            var result =await  _userService.UpdateUser(model);
+
+            var result =await  _userService.UpdateUser(model, user);
 
             Assert.IsNotNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
 
@@ -89,9 +87,9 @@ namespace BackendTest.Test.Services
             model.Name = name;
             model.Address = address;
             model.Email = email;
-            model.Id = user;
 
-            var result = await _userService.UpdateUser(model);
+
+            var result = await _userService.UpdateUser(model,user);
 
             Assert.IsNull(await _context.Users.FirstOrDefaultAsync(x => x.Id == result.Id));
 

@@ -25,7 +25,7 @@ namespace BackendTest.API.Services
 
             var user = _mapper.Map<User>(model);
 
-            if(user.IsValid() != null)
+            if(user.IsValid().Count()>0)
             {
                 return user;
             }
@@ -76,7 +76,7 @@ namespace BackendTest.API.Services
 
             user.Update(model.Name, model.Email, model.Address);
 
-            if (user.IsValid() != null)
+            if (user.IsValid().Count()>0)
             {
                 return user;
             }

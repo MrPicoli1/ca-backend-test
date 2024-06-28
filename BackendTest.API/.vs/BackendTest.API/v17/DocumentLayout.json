@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\services\\billingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\domain\\domainbillingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\controllers\\billingcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\controllers\\productcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\services\\userservicestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,9 +38,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8D613B79-245C-4B36-9FA3-5C98E535D2E1}|BackendTest.API.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.api\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D613B79-245C-4B36-9FA3-5C98E535D2E1}|BackendTest.API.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CCEC10C-7AB4-41C0-98CE-A95CE2A0CD99}|..\\BackendTest.Test\\BackendTest.Test.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.test\\controllers\\productcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D613B79-245C-4B36-9FA3-5C98E535D2E1}|BackendTest.API.csproj|c:\\users\\guigu\\documents\\github\\ca-backend-test\\backendtest.api\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,24 +83,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserControllersTest.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
-              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
-              "RelativeToolTip": "..\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAwwKQAAAAJAAAA",
+              "DocumentIndex": 0,
+              "Title": "BillingServices.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\BillingServices.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Services\\BillingServices.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\BillingServices.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Services\\BillingServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:15:18.493Z",
+              "WhenOpened": "2024-06-28T17:00:19.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DomainBillingTests.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Domain\\DomainBillingTests.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Domain\\DomainBillingTests.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Domain\\DomainBillingTests.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Domain\\DomainBillingTests.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:56:54.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BillingControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\BillingControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Controllers\\BillingControllerTests.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\BillingControllerTests.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Controllers\\BillingControllerTests.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwA4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:44:12.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T22:00:23.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwEYAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:48:58.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserServicesTest.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Services\\UserServicesTest.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Services\\UserServicesTest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T16:10:05.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:46:59.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:41:01.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwEAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T22:04:58.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
@@ -103,59 +212,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAkwEAAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T22:04:58.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "Models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Models\\UserModel.cs",
-              "RelativeToolTip": "Models\\UserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Title": "UserControllersTest.cs",
+              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
+              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
+              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
+              "RelativeToolTip": "..\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAwwKQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T21:41:01.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T22:00:23.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T16:15:18.493Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAkwEYAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:48:58.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ProductServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\ProductServiceTest.cs",
               "RelativeDocumentMoniker": "..\\BackendTest.Test\\Services\\ProductServiceTest.cs",
@@ -163,25 +232,11 @@
               "RelativeToolTip": "..\\BackendTest.Test\\Services\\ProductServiceTest.cs",
               "ViewState": "AQIAAIsAAAAAAAAAAADwv3QAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:09:11.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T16:09:11.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserServicesTest.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
-              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Services\\UserServicesTest.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
-              "RelativeToolTip": "..\\BackendTest.Test\\Services\\UserServicesTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:10:05.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Services\\IUserService.cs",
@@ -193,20 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
-              "RelativeDocumentMoniker": "..\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
-              "ToolTip": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
-              "RelativeToolTip": "..\\BackendTest.Test\\Controllers\\ProductControllerTest.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAUwH8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:46:59.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Models\\ProductModel.cs",
               "RelativeDocumentMoniker": "Models\\ProductModel.cs",
@@ -218,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "Services\\IProductService.cs",
@@ -230,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ProductServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\ProductServiceTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\ProductServiceTest.cs",
@@ -242,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Domain\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
@@ -254,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "UserServicesTest.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Services\\UserServicesTest.cs",
@@ -266,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\guigu\\Documents\\GitHub\\ca-backend-test\\BackendTest.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -278,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "UserControllersTest.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Controllers\\UserControllersTest.cs",
@@ -290,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "DomainTest.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Domain\\DomainTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Guilherme\\Documents\\GitHub\\ca-backend-test\\BackendTest.Test\\Domain\\DomainTest.cs",

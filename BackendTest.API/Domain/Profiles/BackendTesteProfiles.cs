@@ -13,6 +13,12 @@ namespace BackendTest.API.Domain.Profiles
 
             CreateMap<User, UserModel>();
             CreateMap<UserModel, User>();
+
+            CreateMap<Billing, BillingModel>();
+            CreateMap<BillingModel, Billing>();
+
+            CreateMap<BillingLines, BillingLinesModel>();
+            CreateMap<BillingLinesModel, BillingLines>();
         }
     }
 }

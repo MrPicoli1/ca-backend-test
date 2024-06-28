@@ -32,7 +32,7 @@ builder.Services.AddDbContext<MySqlContext>(options =>
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(BackendTesteProfiles));
-
+builder.Services.AddScoped<IBillingServices, BillingServices>();
 
 var app = builder.Build();
 

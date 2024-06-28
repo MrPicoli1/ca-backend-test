@@ -11,6 +11,9 @@ namespace BackendTest.API.Data.Repositories
 
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Billing> Billing {get; set; }
+        public DbSet<BillingLines> BillingLines { get; set; }
+
 
 
     }

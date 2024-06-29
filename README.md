@@ -5,21 +5,21 @@
 - MySQL
 
 **Chamadas dos Serviços**
-Usuario: 
+- **Usuario:** 
 
 - Get: https://localhost:7043/user/{id}
 - Post: https://localhost:7043/user/
 - Update: https://localhost:7043/user/{id}
 - Delete: https://localhost:7043/user/{id}
 
-Produto:
+- **Produto:**
 
 - Get: https://localhost:7043/product/{id}
 - Post: https://localhost:7043/product/
 - Update: https://localhost:7043/product/{id}
 - Delete: https://localhost:7043/product/{id}
 
-Billing:
+- **Billing:**
 
 - Post: https://localhost:7043/billing/
 

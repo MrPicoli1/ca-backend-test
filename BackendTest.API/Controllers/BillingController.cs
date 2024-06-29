@@ -16,17 +16,19 @@ namespace BackendTest.API.Controllers
         }
 
         /// <summary>
-        /// Get a Product
+        /// Add a Billing
         /// </summary>
         /// <param></param>
         /// <returns>IActionResult</returns>
-        /// <response code="200">If the product is found</response>
+        /// <response code="200">If the Billing is added</response>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetProduct([FromBody]string id)
         {
             var billing = _billingServices.AddBilling(id);
-               
+
+            if (billing == null) { return BadRequest("Billing API is Offline"); }
+            if (billing.Details.Customer.IsValid().Count() > 0) { return BadRequest(billing.Details.Customer.IsValid()); }
 
             return Ok(billing);
         }

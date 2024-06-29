@@ -10,6 +10,7 @@ namespace BackendTest.API.Domain.Entities
         }
 
         public string Name { get; private set; }
+        public Guid? BillingLinesId { get; set; }
 
         public void Update(string name)
         {

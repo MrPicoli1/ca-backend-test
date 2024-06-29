@@ -6,11 +6,11 @@
     <members>
         <member name="M:BackendTest.API.Controllers.BillingController.GetProduct(System.String)">
             <summary>
-            Get a Product
+            Add a Billing
             </summary>
             <param></param>
             <returns>IActionResult</returns>
-            <response code="200">If the product is found</response>
+            <response code="200">If the Billing is added</response>
         </member>
         <member name="M:BackendTest.API.Controllers.ProductController.GetProduct(System.Guid)">
             <summary>
@@ -104,66 +104,6 @@
             </code>
             </remarks>
         </member>
-        <member name="T:BackendTest.API.Migrations.InitialCreate">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:BackendTest.API.Migrations.NewDatabase">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.NewDatabase.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.NewDatabase.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.NewDatabase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:BackendTest.API.Migrations.Billing">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:BackendTest.API.Migrations.Billing3">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:BackendTest.API.Migrations.Billing4">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing4.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing4.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.Billing4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
         <member name="T:BackendTest.API.Migrations.initial">
             <inheritdoc />
         </member>
@@ -174,18 +114,6 @@
             <inheritdoc />
         </member>
         <member name="M:BackendTest.API.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:BackendTest.API.Migrations.BILLINGREFACTOR">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.BILLINGREFACTOR.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.BILLINGREFACTOR.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:BackendTest.API.Migrations.BILLINGREFACTOR.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="T:System.Text.RegularExpressions.Generated.EmailRegex_0">

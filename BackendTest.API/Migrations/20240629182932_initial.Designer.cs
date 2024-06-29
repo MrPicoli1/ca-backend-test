@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendTest.API.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    [Migration("20240628182158_Billing")]
-    partial class Billing
+    [Migration("20240629182932_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,22 +33,12 @@ namespace BackendTest.API.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Currency")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("CurrencyCode")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<Guid>("CustomerId")
+                    b.Property<Guid>("DetailsId")
                         .HasColumnType("char(36)");
-
-                    b.Property<DateOnly>("Date")
-                        .HasColumnType("date");
-
-                    b.Property<DateOnly>("DueDate")
-                        .HasColumnType("date");
 
                     b.Property<string>("InvoiceAmount")
                         .IsRequired()
@@ -57,20 +47,13 @@ namespace BackendTest.API.Migrations
                     b.Property<long>("InvoiceDate")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("InvoiceNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("TotalAmount")
-                        .HasColumnType("decimal(65,30)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("DetailsId");
 
                     b.ToTable("Billing");
                 });
@@ -81,33 +64,29 @@ namespace BackendTest.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<int>("BillingId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("BillingId1")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Description")
+                    b.Property<string>("Currency")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid?>("CustomerId")
                         .HasColumnType("char(36)");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("Subtotal")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UnitPrice")
-                        .HasColumnType("int");
+                    b.Property<string>("InvoiceNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BillingId1");
-
-                    b.HasIndex("ProductId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("BillingLines");
                 });
@@ -118,8 +97,8 @@ namespace BackendTest.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("BillingId")
-                        .HasColumnType("varchar(255)");
+                    b.Property<Guid?>("BillingLinesId")
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -127,7 +106,7 @@ namespace BackendTest.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BillingId");
+                    b.HasIndex("BillingLinesId");
 
                     b.ToTable("Products");
                 });
@@ -157,43 +136,33 @@ namespace BackendTest.API.Migrations
 
             modelBuilder.Entity("BackendTest.API.Domain.Entities.Billing", b =>
                 {
-                    b.HasOne("BackendTest.API.Domain.Entities.User", "Customer")
+                    b.HasOne("BackendTest.API.Domain.Entities.BillingLines", "Details")
                         .WithMany()
-                        .HasForeignKey("CustomerId")
+                        .HasForeignKey("DetailsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("Details");
                 });
 
             modelBuilder.Entity("BackendTest.API.Domain.Entities.BillingLines", b =>
                 {
-                    b.HasOne("BackendTest.API.Domain.Entities.Billing", "Billing")
-                        .WithMany("BillingLines")
-                        .HasForeignKey("BillingId1");
-
-                    b.HasOne("BackendTest.API.Domain.Entities.Product", "Product")
+                    b.HasOne("BackendTest.API.Domain.Entities.User", "Customer")
                         .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CustomerId");
 
-                    b.Navigation("Billing");
-
-                    b.Navigation("Product");
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("BackendTest.API.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("BackendTest.API.Domain.Entities.Billing", null)
+                    b.HasOne("BackendTest.API.Domain.Entities.BillingLines", null)
                         .WithMany("Lines")
-                        .HasForeignKey("BillingId");
+                        .HasForeignKey("BillingLinesId");
                 });
 
-            modelBuilder.Entity("BackendTest.API.Domain.Entities.Billing", b =>
+            modelBuilder.Entity("BackendTest.API.Domain.Entities.BillingLines", b =>
                 {
-                    b.Navigation("BillingLines");
-
                     b.Navigation("Lines");
                 });
 #pragma warning restore 612, 618

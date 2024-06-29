@@ -5,6 +5,6 @@ namespace BackendTest.API.Services
 {
     public interface IBillingServices
     {
-        public Task<Billing> AddBilling (string id);
+        public Billing AddBilling (string id);
     }
 }

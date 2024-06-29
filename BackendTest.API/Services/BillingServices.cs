@@ -2,7 +2,6 @@
 using BackendTest.API.Data.Repositories;
 using BackendTest.API.Domain.Entities;
 using BackendTest.API.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace BackendTest.API.Services
 {
@@ -17,21 +16,28 @@ namespace BackendTest.API.Services
             _context = context;
         }
 
-        public async Task<Billing> AddBilling(string id)
+        public Billing AddBilling(string id)
         {
 
             var httpClient = new HttpClient();
-
-            var response = await httpClient.GetAsync
-                ($"https://65c3b12439055e7482c16bca.mockapi.io/api/v1/billing/{id}");
-
-            var jsonResponse = await response.Content.ReadAsStringAsync();
+            HttpResponseMessage response = null;
+            try
+            {
+                 response = httpClient.GetAsync
+                    ($"https://65c3b12439055e7482c16bca.mockapi.io/api/v1/billing/{id}").Result;
+            }
+            catch { return null; }
+            var jsonResponse = response.Content.ReadAsStringAsync().Result;
             var options = new System.Text.Json.JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             };
             var model = System.Text.Json.JsonSerializer.Deserialize<BillingModel>(jsonResponse, options);
 
+            if(_context.Billing.FirstOrDefault(x=>x.Id == id) != null)
+            {
+                throw new Exception($"Billing ID {id} already exists in the database");
+            }
 
             var billing = _mapper.Map<Billing>(model);
 
@@ -44,28 +50,26 @@ namespace BackendTest.API.Services
                 throw new ArgumentNullException(nameof(billing.Details.Customer) + ": Customer is Mandatory");
             }
 
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == billing.Details.Customer.Id);
+            var user = _context.Users.FirstOrDefault(x => x.Id == billing.Details.Customer.Id);
             if (user == null && billing.Details.Customer.IsValid().Count()==0) 
             {
-                await _context.Users.AddAsync(billing.Details.Customer); 
-            }else{return null; }
+                _context.Users.Add(billing.Details.Customer); 
+            }else{return billing; }
 
             if(billing.Details.Lines.Count==0)
                 throw new ArgumentNullException(nameof(billing.Details.Lines) + ": BillingLines is Mandatory");
 
             foreach (Product line in billing.Details.Lines)
             {
-                var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == line.Id);
-                if (product == null)
-                {
-                    await _context.Products.AddAsync(line);
-                }
+
+                line.SetId(new Guid());
+                 _context.Products.Add(line);
             }
             
 
-            await _context.Billing.AddAsync(billing);
+            _context.Billing.Add(billing);
 
-            await _context.SaveChangesAsync();
+           _context.SaveChanges();
 
             return billing;
         }

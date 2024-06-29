@@ -5,6 +5,7 @@
 - MySQL
 
 **Chamadas dos Serviços**
+---------------------
  **Usuario:** 
 
 - Get: https://localhost:7043/user/{id}
@@ -24,6 +25,7 @@
 - Post: https://localhost:7043/billing/
 
 **Configuraçôes necessárias**
+---------------------
 - .NET 8 https://dotnet.microsoft.com/pt-br/download/dotnet/8.0
 - MySQL Latest https://dev.mysql.com/downloads/installer/
 - Realizar a migraçao para a base de dados local utilizando Entity Framework https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli
